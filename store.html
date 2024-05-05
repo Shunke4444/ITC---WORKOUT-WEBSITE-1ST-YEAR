@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="store.css">
+    <script src="https://kit.fontawesome.com/5756001ff6.js" crossorigin="anonymous"></script>
+    <script src="store.js" defer></script>
+</head>
+<body>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="IMAGES/PERSONA 5.jpg" alt="logo">
+                <!-- placeholder logo -->
+            </div>
+            <div class="nav-links">
+                    <a href="#" class="other-page">HOME</a> 
+                    <a href="#" class="other-page">FOOD</a> 
+                    <a href="#" class="other-page">EXERCISE</a> 
+                    <a href="#" class="other-page">PLANS</a> 
+                    <a href="#" class="currrent-page">STORE</a> 
+            </div>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input class="search-input" type="search" placeholder="Search">
+                <i class="fa-solid fa-qrcode"></i>
+            </div>
+
+            <div class="user-tab">
+                <div class="user-notif">
+                    <i class="fa-regular fa-bell user-icon" id="notifBell"onclick="toggleNotifMenu()"></i>
+                </div>
+
+                   <div class="sub-menu-wrapper-notification" id="subNotif"> 
+                    <div class="sub-menu-notif">
+                        <div class="user-info">
+                            <h1>Notifications</h1>
+                        </div> 
+                        <hr>
+                        <div class="sub-menu-notification"> 
+                            <div class="notif-items">
+                               <h1>You have no new Notifications right now!</h1>
+                                <p>This is where you will recieve your Notifications regarding your
+                                    exercise, diet, and more!
+                                </p>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+
+                <div class="user-cart">
+                    <i class="fa-solid fa-cart-shopping user-icon"></i>
+                </div>
+                   <img src="IMAGES/PFP.webp" class="user-pfp" onclick="toggeleMenu()">
+
+                   <div class="sub-menu-wrapper" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="IMAGES/PFP.webp">
+                            <h1>User Name</h1>
+                        </div> 
+                        <hr>
+                            <div class="user-links">
+                                <a href="#" class="sub-menu-link">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>Edit Profile</p>
+                                </a>
+                             
+                                <a href="#" class="sub-menu-link">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <p>Settings & Privacy</p>
+                                </a>
+                               
+                                <a href="#" class="sub-menu-link">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <p>Help & Support</p>
+                                </a>
+                        
+                                <a href="#" class="sub-menu-link">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    <p>Log Out</p>
+                                </a>
+                            </div>
+                   </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO BANNER -->
+
+        <section class="hero-banner-shop">
+            <div class="hero-banner-bg">
+            <div class="banner-items-container">
+                <div class="banner-items">
+                    <h1 class="title-text">SHOP</h1>
+                    <h2 class="title-text">SHOP</h2>
+                    <h3 class="title-text">FITTNESS</h3>
+                    <p>SURRENDER TO YOUR GAINS</p>
+                    <p>Here you'll find everything that'll help you in your fitness journey!
+                    Enjoy your shopping!</p>
+                    <button class="learn-more-btn" id= "learn-more-btn" role="button">LEARN MORE</button>
+                </div>
+                
+                <div class="banner-right-side">       
+                    <img src="" class="banner-img">             
+                    <div class="shapes">
+                        <div class="polygon-design red-polygon"></div>
+                        <div class="small-polygon"></div>
+                        <div class="fill-polygon"></div>
+                        <div class="fill-polygon2"></div>
+                        <img src="IMAGES/ATHLETE.png">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop-main">
+        <div class="carousel">
+            <button type="button" class="carousel_btn jsPrev" aria-label="Previous slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+              </svg>
+            </button>
+
+            <div class="carousel_track-container">
+              <ul class="carousel_track">
+                <li class="carousel_slide is-selected">
+                  <div class="carousel_image">
+                    <img src="IMAGES/BANNER 1.png" alt="" role="presentation">
+                  </div>
+                </li>
+                <li class="carousel_slide">
+                  <div class="carousel_image">
+                    <img src="IMAGES/BANNER 2.png" alt="" role="presentation">
+                  </div>
+                </li>
+                <li class="carousel_slide">
+                  <div class="carousel_image">
+                    <img src="IMAGES/BANNER 3.png" alt="" role="presentation">
+                  </div>
+                </li>
+            
+            </div>
+
+            <button type="button" class="carousel_btn jsNext" aria-label="Next slide">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+              </svg>
+            </button>
+          </div>
+    </section>
+    <main>
+        <section class="featured">
+            <div class="featured-section">   
+                <h1 class="title-text">FEATURED PRODUCTS</h1>
+                <div class="feauted-items">
+                    <div class="featured-carousel">
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                        <div class="featured-thing"></div>
+                    </div>
+                </div>
+                <div class="featured-btns">
+                    <i class="fa-solid fa-circle-arrow-left" onclick="clickGoBack()"></i>
+                    <i class="fa-solid fa-circle-arrow-right" onclick="clickGoNext()"></i>
+                </div>
+            </div> 
+        </section>
+    </main>
+   
+</body>
+</html>
